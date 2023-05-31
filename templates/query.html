@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive</title>
+    <link rel="icon" href="images/resume1.png">
+    <link rel="stylesheet" href="{{ url_for('static',filename='dstyle.css') }}"/>
+</head>
+<body>
+    <div class="form">
+      <form action="/query" method="POST">
+        <div class="input-container ic2">
+          <!-- <input id="person" class="input" type="text" name="person" placeholder=" " /> -->
+          <input id="question" class="input" type="text" name="question" placeholder=" " />
+          <div class="cut"></div>
+          <label for="query" class="placeholder" name="queostion">Query</label>
+        </div>
+        
+        <button type="submit" class="submit">submit</button>
+        <p>{{ ans }}</p>
+      </form>
+      </div>
+    
+</body>
+</html>
